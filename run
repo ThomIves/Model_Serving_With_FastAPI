@@ -1,1 +1,0 @@
-uvicorn Run_Model_API:app --reload
