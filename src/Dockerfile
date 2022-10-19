@@ -6,6 +6,8 @@ COPY ./requirements.txt /src
 COPY ./Run_Model_API.py /src
 COPY ./Linear_Regression_Model.pkl /src
 
+RUN /usr/local/bin/python -m pip install --upgrade pip
+
 RUN pip install -r requirements.txt
 
 EXPOSE 8000:8000
